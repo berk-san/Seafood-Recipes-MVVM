@@ -8,6 +8,8 @@
 import UIKit
 
 class Recipe: UIViewController {
+    
+    private let viewModel: RecipeViewModel = RecipeViewModel()
 
     @IBOutlet weak var recipeDetailsLabel: UILabel!
     @IBOutlet weak var recipeIngredientsLabel: UILabel!

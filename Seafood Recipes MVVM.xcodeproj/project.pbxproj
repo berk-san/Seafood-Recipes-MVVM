@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C006606329A70BE9004CBF56 /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006606229A70BE9004CBF56 /* NetworkConstant.swift */; };
+		C006606529A70D1C004CBF56 /* MealModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006606429A70D1C004CBF56 /* MealModel.swift */; };
+		C006606729A70F2F004CBF56 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006606629A70F2F004CBF56 /* RecipeModel.swift */; };
+		C006606929A70FF6004CBF56 /* MealListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006606829A70FF6004CBF56 /* MealListViewModel.swift */; };
+		C006606B29A71D7F004CBF56 /* MealCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006606A29A71D7F004CBF56 /* MealCellViewModel.swift */; };
+		C006606E29A72222004CBF56 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C006606D29A72222004CBF56 /* SDWebImage */; };
+		C006607029A72476004CBF56 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006606F29A72476004CBF56 /* RecipeViewModel.swift */; };
 		C04566BF29A6991A00E3D2E4 /* MealList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04566BD29A6991A00E3D2E4 /* MealList.swift */; };
 		C04566C029A6991A00E3D2E4 /* MealList.xib in Resources */ = {isa = PBXBuildFile; fileRef = C04566BE29A6991A00E3D2E4 /* MealList.xib */; };
 		C04566C929A69B4000E3D2E4 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04566C729A69B4000E3D2E4 /* MealCell.swift */; };
@@ -20,6 +27,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C006606229A70BE9004CBF56 /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
+		C006606429A70D1C004CBF56 /* MealModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealModel.swift; sourceTree = "<group>"; };
+		C006606629A70F2F004CBF56 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
+		C006606829A70FF6004CBF56 /* MealListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewModel.swift; sourceTree = "<group>"; };
+		C006606A29A71D7F004CBF56 /* MealCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCellViewModel.swift; sourceTree = "<group>"; };
+		C006606F29A72476004CBF56 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		C04566BD29A6991A00E3D2E4 /* MealList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealList.swift; sourceTree = "<group>"; };
 		C04566BE29A6991A00E3D2E4 /* MealList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealList.xib; sourceTree = "<group>"; };
 		C04566C729A69B4000E3D2E4 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
@@ -39,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C006606E29A72222004CBF56 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +123,7 @@
 		C04DFBB429A6809C001E43B4 /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
+				C006606229A70BE9004CBF56 /* NetworkConstant.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -138,6 +153,8 @@
 		C04DFBB929A68125001E43B4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C006606429A70D1C004CBF56 /* MealModel.swift */,
+				C006606629A70F2F004CBF56 /* RecipeModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -145,6 +162,9 @@
 		C04DFBBB29A68153001E43B4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				C006606829A70FF6004CBF56 /* MealListViewModel.swift */,
+				C006606A29A71D7F004CBF56 /* MealCellViewModel.swift */,
+				C006606F29A72476004CBF56 /* RecipeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -175,6 +195,9 @@
 			dependencies = (
 			);
 			name = "Seafood Recipes MVVM";
+			packageProductDependencies = (
+				C006606D29A72222004CBF56 /* SDWebImage */,
+			);
 			productName = "Seafood Recipes MVVM";
 			productReference = C04DFB9D29A67FA6001E43B4 /* Seafood Recipes MVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -203,6 +226,9 @@
 				Base,
 			);
 			mainGroup = C04DFB9429A67FA6001E43B4;
+			packageReferences = (
+				C006606C29A72222004CBF56 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = C04DFB9E29A67FA6001E43B4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,11 +258,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C006606529A70D1C004CBF56 /* MealModel.swift in Sources */,
+				C006606B29A71D7F004CBF56 /* MealCellViewModel.swift in Sources */,
 				C04566C929A69B4000E3D2E4 /* MealCell.swift in Sources */,
 				C04566BF29A6991A00E3D2E4 /* MealList.swift in Sources */,
 				C04566CC29A69E2E00E3D2E4 /* UIViewExtension.swift in Sources */,
 				C04DFBA129A67FA6001E43B4 /* AppDelegate.swift in Sources */,
+				C006606729A70F2F004CBF56 /* RecipeModel.swift in Sources */,
+				C006607029A72476004CBF56 /* RecipeViewModel.swift in Sources */,
+				C006606329A70BE9004CBF56 /* NetworkConstant.swift in Sources */,
 				C04566D029A69F7500E3D2E4 /* Recipe.swift in Sources */,
+				C006606929A70FF6004CBF56 /* MealListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +478,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C006606C29A72222004CBF56 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C006606D29A72222004CBF56 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C006606C29A72222004CBF56 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C04DFB9529A67FA6001E43B4 /* Project object */;
 }

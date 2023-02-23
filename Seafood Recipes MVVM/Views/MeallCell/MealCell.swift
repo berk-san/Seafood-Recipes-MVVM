@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class MealCell: UITableViewCell {
     
@@ -34,6 +35,11 @@ class MealCell: UITableViewCell {
         cellView.round()
         cellImageView.round(5)
         cellView.backgroundColor = .lightGray
+    }
+    
+    func setupCell(viewModel: MealCellViewModel) {
+        cellNameLabel.text = viewModel.mealName
+        cellImageView.sd_setImage(with: viewModel.mealImageUrl)
     }
     
 }

@@ -13,3 +13,10 @@ Create Readme.md
 5. Create MealCell View
 6. Create Recipe View
 7. Create UIViewExtension
+
+## Fourth Commit
+8. Create MealList ViewModel
+9. Create MealCell ViewModel
+10. Create Recipe ViewModel
+11. Store network constants in a singleton class
+12. Convert JSON files to Models
