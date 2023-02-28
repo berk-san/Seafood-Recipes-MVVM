@@ -14,6 +14,8 @@
 		C006606B29A71D7F004CBF56 /* MealCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006606A29A71D7F004CBF56 /* MealCellViewModel.swift */; };
 		C006606E29A72222004CBF56 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C006606D29A72222004CBF56 /* SDWebImage */; };
 		C006607029A72476004CBF56 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006606F29A72476004CBF56 /* RecipeViewModel.swift */; };
+		C006607229A86142004CBF56 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006607129A86142004CBF56 /* APICaller.swift */; };
+		C006607629A86A93004CBF56 /* ObservableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C006607529A86A93004CBF56 /* ObservableObject.swift */; };
 		C04566BF29A6991A00E3D2E4 /* MealList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04566BD29A6991A00E3D2E4 /* MealList.swift */; };
 		C04566C029A6991A00E3D2E4 /* MealList.xib in Resources */ = {isa = PBXBuildFile; fileRef = C04566BE29A6991A00E3D2E4 /* MealList.xib */; };
 		C04566C929A69B4000E3D2E4 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C04566C729A69B4000E3D2E4 /* MealCell.swift */; };
@@ -33,6 +35,8 @@
 		C006606829A70FF6004CBF56 /* MealListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListViewModel.swift; sourceTree = "<group>"; };
 		C006606A29A71D7F004CBF56 /* MealCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCellViewModel.swift; sourceTree = "<group>"; };
 		C006606F29A72476004CBF56 /* RecipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
+		C006607129A86142004CBF56 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		C006607529A86A93004CBF56 /* ObservableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableObject.swift; sourceTree = "<group>"; };
 		C04566BD29A6991A00E3D2E4 /* MealList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealList.swift; sourceTree = "<group>"; };
 		C04566BE29A6991A00E3D2E4 /* MealList.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MealList.xib; sourceTree = "<group>"; };
 		C04566C729A69B4000E3D2E4 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
@@ -124,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				C006606229A70BE9004CBF56 /* NetworkConstant.swift */,
+				C006607129A86142004CBF56 /* APICaller.swift */,
 			);
 			path = NetworkService;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 		C04DFBB829A680FF001E43B4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C006607529A86A93004CBF56 /* ObservableObject.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -265,7 +271,9 @@
 				C04566CC29A69E2E00E3D2E4 /* UIViewExtension.swift in Sources */,
 				C04DFBA129A67FA6001E43B4 /* AppDelegate.swift in Sources */,
 				C006606729A70F2F004CBF56 /* RecipeModel.swift in Sources */,
+				C006607229A86142004CBF56 /* APICaller.swift in Sources */,
 				C006607029A72476004CBF56 /* RecipeViewModel.swift in Sources */,
+				C006607629A86A93004CBF56 /* ObservableObject.swift in Sources */,
 				C006606329A70BE9004CBF56 /* NetworkConstant.swift in Sources */,
 				C04566D029A69F7500E3D2E4 /* Recipe.swift in Sources */,
 				C006606929A70FF6004CBF56 /* MealListViewModel.swift in Sources */,

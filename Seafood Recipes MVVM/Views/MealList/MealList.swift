@@ -35,7 +35,22 @@ class MealList: UIViewController {
     }
     
     func setupBinders() {
+        viewModel.isLoading.bind { [weak self] loading in
+            guard let self = self, let loading = loading else { return }
+            DispatchQueue.main.async {
+                if loading {
+                    self.activityIndicator.startAnimating()
+                } else {
+                    self.activityIndicator.stopAnimating()
+                }
+            }
+        }
         
+        viewModel.cellDataArray.bind { [weak self] mealArray in
+            guard let self = self, let mealArray = mealArray else { return }
+            self.cellViewModelArray = mealArray
+            self.reloadTableView()
+        }
     }
 }
 
@@ -74,6 +89,13 @@ extension MealList: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let mealID = cellViewModelArray[indexPath.row].id
+        print(mealID)
+        DispatchQueue.main.async {
+            let recipeViewModel = RecipeViewModel(id: mealID)
+            let destinationVC = Recipe(viewModel: recipeViewModel)
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

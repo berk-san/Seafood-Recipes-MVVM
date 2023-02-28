@@ -20,3 +20,9 @@ Create Readme.md
 10. Create Recipe ViewModel
 11. Store network constants in a singleton class
 12. Convert JSON files to Models
+
+## Fifth Commit
+13. Create ObservableObject Class for binding
+14. Call network requests in ViewModels
+15. Pass data from ViewModel to ViewController
+16. Import SDWebImage to convert Images

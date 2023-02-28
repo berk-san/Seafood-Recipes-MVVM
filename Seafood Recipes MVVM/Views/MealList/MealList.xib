@@ -24,8 +24,8 @@
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="wpF-QM-2tT">
-                    <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="wpF-QM-2tT">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
                     <color key="color" systemColor="systemGray2Color"/>
                 </activityIndicatorView>
             </subviews>
