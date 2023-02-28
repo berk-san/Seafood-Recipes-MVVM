@@ -26,3 +26,7 @@ Create Readme.md
 14. Call network requests in ViewModels
 15. Pass data from ViewModel to ViewController
 16. Import SDWebImage to convert Images
+
+## Sixth Commit
+17. Add UIScrollView
+18. Configure RecipeViewModel

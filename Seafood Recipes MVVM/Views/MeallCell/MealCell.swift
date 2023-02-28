@@ -34,7 +34,7 @@ class MealCell: UITableViewCell {
         cellView.addBorder(color: .label, width: 0.5)
         cellView.round()
         cellImageView.round(5)
-        cellView.backgroundColor = .lightGray
+        cellView.backgroundColor = .systemFill
     }
     
     func setupCell(viewModel: MealCellViewModel) {

@@ -28,16 +28,10 @@ class Recipe: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
-//        activityIndicator.isHidden = true
-        print("RECIPE ID")
         setupBinders()
-//        print(viewModel.recipeID)
-//        viewModel.fetchRecipe()
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,6 +42,7 @@ class Recipe: UIViewController {
     func configureUI() {
         self.title = "Recipe Detail"
         self.view.backgroundColor = .systemBackground
+        recipeImageView.round(20)
     }
     
     func setupBinders() {
@@ -55,10 +50,8 @@ class Recipe: UIViewController {
             guard let self = self, let loading = loading else { return }
             DispatchQueue.main.async {
                 if loading {
-                    print("Loading")
                     self.activityIndicator.startAnimating()
                 } else {
-                    print("Not loading")
                     self.activityIndicator.stopAnimating()
                 }
             }
@@ -68,34 +61,25 @@ class Recipe: UIViewController {
             guard let self = self, let result = result else { return }
             DispatchQueue.main.async {
                 self.recipeDetailsLabel.text = result
-                print("RECIPEDETAILSLABEL CHANGED")
-                print(result)
             }
         }
         viewModel.recipeIngredients.bind { [weak self] result in
             guard let self = self, let result = result else { return }
             DispatchQueue.main.async {
                 self.recipeIngredientsLabel.text = result
-                print("RECIPEINGREDIENTSLABEL CHANGED")
-                print(result)
             }
         }
         viewModel.recipeTitle.bind { [weak self] result in
             guard let self = self, let result = result else { return }
             DispatchQueue.main.async {
                 self.recipeTitleLabel.text = result
-                print("RECIPETITLELABEL CHANGED")
-                print(result)
             }
         }
         viewModel.recipeImageUrl.bind { [weak self] result in
             guard let self = self, let result = result else { return }
             DispatchQueue.main.async {
                 self.recipeImageView.sd_setImage(with: result, placeholderImage: UIImage(named: "food-app.png"))
-                print("RECIPEIMAGEVIEW CHANGED")
-                print(result)
             }
         }
     }
-
 }
